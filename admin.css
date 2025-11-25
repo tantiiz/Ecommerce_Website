@@ -1,0 +1,380 @@
+body {
+    background-color: #FCF7F8;
+    font-family: montserrat;
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('Montserrat-Regular.ttf');
+}
+  
+@font-face {
+    font-family: 'bromph';
+    src: url('Fonts/BROMPH_TOWN.ttf');
+}
+  
+@font-face {
+    font-family: 'runtoe';
+    src: url('Fonts/Runtoe.ttf');
+}
+
+.admin {
+    margin-bottom: 100px;
+}
+
+.admin h1 {
+    font-family: runtoe;
+    text-align: center;
+    font-size: 50px;
+    margin: 50px;
+}
+
+.admin .adminaction {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.admin .adminaction img {
+    width: 30px;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.admin .adminaction img:hover {
+    scale: 1.1;
+    filter: drop-shadow(0px 0px 2px rgba(128, 128, 128, 0.527));
+}
+  
+.admin form label {
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+  
+.admin input.search {
+    border: none;
+    width: 100%;
+    font-size: 13px;
+    padding: 5px 10px;
+    margin: 0px;
+    box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.622);
+    border-radius: 20px;
+}
+  
+.adminprod input.search:focus {
+    outline: none;
+}
+  
+.cat {
+    margin-top: 10px;
+}
+  
+.cat h4 {
+    font-family: runtoe;
+    margin: 20px 0px 10px 0px;
+    color: #fec700;
+    text-shadow: 2px 2px 1px #3b3c43b0;
+}
+  
+.catlist {
+    margin-left: 20px;
+    display: grid;
+}
+  
+.catlist a {
+    color: black;
+    margin: 3px 0px;
+}
+
+.manage {
+    margin: -5px -17px -20px -17px;
+}
+
+.adminprod {
+    text-align: center;
+}
+
+.adminprod table {
+    background-color: white;
+}
+
+.adminprod td {
+    padding: 10px;
+}
+
+.adminprod td.proddetails {
+    display: -webkit-box;
+    -webkit-line-clamp: 12;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    outline: none;
+    font-size: 10px;
+    border-color: white;
+    border-collapse: collapse;
+}
+
+.adminprod td a {
+    color: black;
+}
+
+
+/*----------------- ADD PRODUCT ------------------*/
+a.backbtn {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    color: black;
+    text-decoration: none;
+    transition: 0.1s ease-in-out;
+}
+
+a.backbtn:hover {
+    scale: 1.1;
+}
+
+img.backbtn {
+    width: 20px;
+}
+
+.addprod {
+    margin-top: 70px;
+}
+
+.addprod h1 {
+    font-family: runtoe;
+    text-align: center;
+    color: #fec700;
+    text-shadow: 2px 2px 2px gray;
+}
+
+.form-group label {
+    margin: 0px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+button.btn {
+    background-color: #3b3c43;
+    border: 2px solid #3b3c43;
+    margin-top: 10px;
+    padding: 10px 30px;
+}
+
+button.btn:hover {
+    background-color: #3b3c439c;
+    border: 2px solid #3b3c43;
+    color: black;
+}
+
+button.btn:active {                                                                                                                                  
+    background-color: #3b3c43be;
+    border: 2px solid #3b3c43;
+}
+
+
+/*------------------- EDIT ACCOUNT ----------------*/
+.editacc {
+    margin-top: 80px;
+}
+
+.editacc h1 {
+    font-family: runtoe;
+    text-align: center;
+    color: #fec700;
+    text-shadow: 2px 2px 2px gray;
+}
+
+/*------------------- ORDERS ----------------*/
+.orders {
+    margin: 80px 150px;
+}
+
+.orders h1 {
+    font-family: runtoe;
+    text-align: center;
+    color: #fec700;
+    text-shadow: 2px 2px 2px gray;
+}
+
+.orders table {
+    text-align: center;
+}
+
+.orders table th {
+    vertical-align: middle;
+}
+
+.orders table td {
+    vertical-align: middle;
+}
+
+td.uname {
+    width: 200px;
+}
+
+td.abtn {
+    width: 150px;
+}
+
+button.b {
+    width: 100%;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+    padding: 5px 0px;
+    border-radius: 2px;
+    margin: 2px 0px;
+}
+
+button.shipout {
+    background: rgba(255, 0, 0, 0.511);
+}
+
+button.delivered {
+    background: rgba(0, 128, 0, 0.622);
+}
+
+span.complete {
+    color: green;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .admin h1 {
+        font-size: 30px;
+        margin: 20px;
+    }
+
+    .manage h2 {
+        font-size: 20px;
+        margin: 20px 0px;
+    }
+    
+    .admin .adminaction {
+        display: block;
+        align-items: left;
+        justify-content: left;
+        gap: 10px;
+        margin-top: -45px;
+        margin-bottom: 0px;
+    }
+    
+    .admin .adminaction img {
+        width: 20px;
+        transition: 0.1s ease-in-out;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+    
+    .admin .adminaction img:hover {
+        scale: 1.1;
+        filter: drop-shadow(0px 0px 2px rgba(128, 128, 128, 0.527));
+    }
+      
+    .admin form label {
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+      
+    .admin input.search {
+        font-size: 13px;
+        padding: 3px 10px;
+    }
+      
+    .adminprod {
+        margin-top: 10px;
+    }
+    
+    .adminprod table {
+        background-color: white;
+    }
+    
+    .adminprod td {
+        padding: 5px;
+    }
+    
+    .adminprod td.proddetails {
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+        text-overflow: ellipsis;
+        outline: none;
+        font-size: 10px;
+        border-color: white;
+        border-collapse: collapse;
+    }
+
+    .adminprod td {
+        font-size: 8px;
+    }
+    
+    .adminprod td a {
+        color: black;
+        font-size: 10px;
+    }
+
+    .adminprod td img {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .cat {
+        margin-top: 10px;
+    }
+      
+    .cat h4 {
+        font-family: runtoe;
+        margin: 0;
+        font-size: 12px;
+        text-shadow: 1px 1px 1px #3b3c43;
+    }
+      
+    .catlist {
+        margin-left: 20px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+      
+    .catlist a {
+        color: black;
+        font-size: 8px;
+    }
+
+    /*----------------- ADD PRODUCT --------------*/
+    a.backbtn {
+        top: 30px;
+        left: 30px;
+    }
+    
+    .addprod {
+        margin-top: 70px;
+    }
+    
+    .addprod h1 {
+        font-size: 30px;
+    }
+    
+    .form-group label {
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+
+    button.btn {
+        margin-top: 30px;
+        margin-left: 160px;
+        padding: 5px 20px;
+    }
+
+}

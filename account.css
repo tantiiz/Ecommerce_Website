@@ -1,0 +1,223 @@
+body {
+    background-color: #FCF7F8;
+    font-family: montserrat;
+  }
+  
+  @font-face {
+    font-family: 'montserrat';
+    src: url('Fonts/Montserrat-Regular.ttf');
+  }
+  
+  @font-face {
+    font-family: 'bromph';
+    src: url('Fonts/BROMPH_TOWN.ttf');
+  }
+  
+  @font-face {
+    font-family: 'runtoe';
+    src: url('Fonts/Runtoe.ttf');
+  }
+  
+  .navbar {
+    background-color: #30323D;
+  }
+   
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  #navbarNav ul {
+    align-items: center;
+  }
+  
+  #navbarNav li {
+    margin: 0px 10px;
+  }
+  
+  #navbarNav a {
+    color: white;
+    transition: 0.2s ease-in-out;
+  }
+  
+  #navbarNav a:hover {
+    scale: 1.2;
+  }
+  
+  #navbarNav img {
+    width: 30px;
+  }
+  
+  img.logo {
+    width: 150px;
+  }
+
+  .account {
+    margin: 150px auto;
+  }
+
+  .account .welacc {
+    align-items: center;
+  }
+
+  .account .welacc .logout {
+    text-align: right;
+    margin-top: 20px;
+  }
+
+  .account .welacc .logout a {
+    color: black;
+    margin-right: 10px;    
+  }
+
+  .account .welacc .logout img {
+    margin: 20px 0px;
+    width: 20px;
+  }
+
+  .account h1 {
+    font-family: runtoe;
+  }
+
+  .account p {
+    margin: 0px;
+  }
+
+  .account h4 {
+    margin-right: 10px;
+  }
+
+  .account .d img {
+    width: 20px;
+  }
+  
+  .d {
+    margin: 0px;
+  }
+  
+.toreceive {
+    margin: 50px 0px;
+}
+
+.toreceive p.prodname {
+    font-size: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.toreceive p.price {
+    color: red;
+}
+
+p.status {
+  text-align: center;
+  background-color: #30323D;
+  color: white;
+}
+
+a.o {
+  text-decoration: none;
+  color: black;
+}
+
+button.rate {
+  width: 100%;
+  border: none;
+  background-color: #30323D;
+}
+
+button.rate:hover {
+  background-color: #30323db6;
+}
+
+
+
+/*--------------- EDIT ACCOUNT ---------------*/
+.editacc {
+    margin: 100px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.editacc h1 {
+    font-family: bromph;
+    text-align: center;
+    color: #30323D;
+    margin-bottom: 20px;
+}
+
+.editacc form {
+    background-color: #FCF7F8;
+    padding: 30px 50px 50px 50px;
+    border-radius: 5px;
+    max-width: 500px;
+}
+
+.form-group label {
+    margin: 0px;
+}
+
+.subbtn {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.subbtn button {
+    padding: 7px 30px;
+    border-radius: 20px;
+    width: 100%;
+    background-color: #fcca17;
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+
+.subbtn button:hover {
+    background-color: #d4a90c;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+  
+/*--------------- FOOTER ----------------*/
+.footer {
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px;
+  }
+  
+  .footer img {
+    width: 200px;
+  }
+  
+  .footer p.c {
+    text-align: center;
+  }
+  
+  .footer hr {
+    border-color: #666;
+  }
+
+
+
+@media only screen and (max-width: 600px) {
+    .account {
+        margin: 100px auto;
+    }
+
+    .account h1 {
+        font-size: 30px;
+    }
+    
+}

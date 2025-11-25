@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Form</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #30323D;
+      font-family: montserrat;
+    }
+    @font-face {
+        font-family: 'bromph';
+        src: url('Fonts/BROMPH_TOWN.ttf');
+    }
+    .signup-form {
+      max-width: 400px;
+      margin: 150px auto;
+      padding: 30px 30px 10px 30px;
+      background: #e9e9e9;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .signup-form h2 {
+        font-family: bromph;
+        font-size: 45px;
+    }
+    .form-group input {
+        border: none;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    }
+    .btn {
+        background: #ffc800;
+        border: none;
+        color: #30323D;
+        font-weight: bold;
+        margin-top: 30px;
+        border-radius: 20px;
+        margin-bottom: 30px;
+    }
+    .btn:hover {
+        background: #dbab00;
+        color: #30323D;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+    p.login {
+        text-align: center;
+        font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form class="signup-form" action="signin.php" method="POST">
+                    <h2 class="text-center mb-4">Sign In</h2>
+                    <div class="form-group">
+                        <input type="text" name="email" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" class="form-control" placeholder="Password" required>
+                    </div>
+                    <input type="submit" value="LOGIN" class="btn btn-primary btn-block" />
+                    <p class="login">Don't have an account?<a href="signup.html"> Sign Up</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

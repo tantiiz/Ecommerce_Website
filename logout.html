@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log out Account</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Silkscreen&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'montserrat';
+            src: url('Montserrat-Regular.ttf');
+        }
+        
+        @font-face {
+            font-family: 'bromph';
+            src: url('Fonts/BROMPH_TOWN.ttf');
+        }
+        
+        @font-face {
+            font-family: 'runtoe';
+            src: url('Fonts/Runtoe.ttf');
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #282c35;
+            color: #fff;
+        }
+
+        .logout-box {
+            background-color: #FCF7F8;
+            padding: 20px;
+            border-radius: 5px;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 35px;
+            font-family: bromph;
+            letter-spacing: 2px;
+            color: #3b3c43;
+        }
+        
+        p {
+            margin-bottom: 30px;
+            font-size: 20px;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .button a {
+            display: inline-block; /* or display: block; */
+            transition: transform 0.3s;
+            text-decoration: none;
+            margin: 0 30px;
+            margin-bottom: 30px;
+            scale: 1.2;
+        }
+
+        .button a:hover {
+            transform: scale(1.2);
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="logout-box">
+        <h1>Log out</h1>
+        <p>Are you sure you want to log out?</p>
+        <div class="button">
+            <a href="logout.php" style="color: #ea5858; font-size: 18px;">Yes</a>
+            <a onclick="goBack()" href="#" style="color: #4CAF50; font-size: 18px;">No</a>
+            <script>
+                function goBack() {
+                    window.history.back();
+                }
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

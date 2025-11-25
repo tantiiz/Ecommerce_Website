@@ -1,0 +1,228 @@
+body {
+    background-color: #FCF7F8;
+    font-family: montserrat;
+  }
+  
+  @font-face {
+    font-family: 'montserrat';
+    src: url('Fonts/Montserrat-Regular.ttf');
+  }
+  
+  @font-face {
+    font-family: 'bromph';
+    src: url('Fonts/BROMPH_TOWN.ttf');
+  }
+  
+  @font-face {
+    font-family: 'runtoe';
+    src: url('Fonts/Runtoe.ttf');
+  }
+  
+  .navbar {
+    background-color: #30323D;
+  }
+   
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  #navbarNav ul {
+    align-items: center;
+  }
+  
+  #navbarNav li {
+    margin: 0px 10px;
+  }
+  
+  #navbarNav a {
+    color: white;
+    transition: 0.2s ease-in-out;
+  }
+  
+  #navbarNav a:hover {
+    scale: 1.2;
+  }
+  
+  #navbarNav img {
+    width: 30px;
+  }
+  
+  img.logo {
+    width: 150px;
+  }
+  
+  a.backbtn {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    color: black;
+    text-decoration: none;
+    transition: 0.1s ease-in-out;
+}
+
+a.backbtn:hover {
+    scale: 1.1;
+}
+
+img.backbtn {
+    width: 20px;
+}
+
+.checkout {
+    margin: 140px auto;
+}
+
+.checkout h1 {
+    font-family: runtoe;
+    color: #fec700;
+    text-shadow: 2px 2px 1px #3b3c43b0;
+   
+}
+
+.checkout .top {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.667);
+    margin: 5px;
+    height: 50px;
+}
+
+.checkout .row {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.667);
+    margin: 5px;
+    height: 125px;
+}
+
+.checkout .item-image {
+    text-align: center;
+}
+
+.checkout .item-image img {
+    width: 70%;
+}
+
+.checkout .item-name {
+    font-weight: bold;
+    font-size: 18px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.checkout .item-total {
+    font-size: 18px;
+}
+
+.checkout p.coloc {
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.checkout p.coloc img {
+    width: 25px;
+    text-align: right;
+}
+
+.checkout p.time {
+    color: gray;
+}
+
+.checkout button.btn {
+    padding: 10px 65px;
+    border: 1px solid #30323D;
+    font-weight: bold;
+    background-color: #30323d;
+    color: white;
+    border-radius: 2px;
+}
+
+.checkout button.btn:hover {
+    background-color: #30323da2;
+}
+
+
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Adjust as needed */
+    padding: 20px 0; /* Adjust padding as needed */
+}
+
+/*----------------- BUY NOW -------------------*/
+.buynow {
+  margin-top: 140px;
+}
+
+.buynow img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer b.totalcheckout {
+    font-size: 30px;
+    color: red;
+}
+
+.footer button.po {
+  padding: 10px 65px;
+  border: 1px solid #30323D;
+  font-weight: bold;
+  background-color: #30323d;
+  color: white;
+  border-radius: 2px;
+}
+
+.footer button.po:hover {
+  background-color: #30323da2;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .checkout .row {
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.667);
+        margin: 5px;
+        height: auto;
+    }
+
+    a.backbtn {
+      position: absolute;
+      top: 100px;
+      left: 30px;
+      color: black;
+      text-decoration: none;
+  }
+  
+  img.backbtn {
+      width: 20px;
+  }
+
+  img.logo {
+    width: 100px;
+  }
+
+
+}
