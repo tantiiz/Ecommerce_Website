@@ -1,4 +1,4 @@
--- phpMyAdmin SQL Dump
+  -- phpMyAdmin SQL Dump
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
@@ -7,7 +7,8 @@
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+-- Removed NO_AUTO_VALUE_ON_ZERO to prevent AUTO_INCREMENT issues
+-- SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -278,7 +279,7 @@ ALTER TABLE `rating`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
+  MODIFY `user_id` INT(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
 
 --
 -- Constraints for dumped tables

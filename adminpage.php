@@ -66,7 +66,7 @@ $result = $conn->query($sql);
 
 
     <div class="admin container">
-        <h1>Welcome admin <?php echo $_SESSION['admin_username']; ?>!</h1>
+        <h1>Welcome! <?php echo $_SESSION['admin_username']; ?>!</h1>
         <div class="row">
             <div class="col-md-3">
                 <!-- Search form -->

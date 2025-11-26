@@ -105,7 +105,7 @@ $checkout_result = $conn->query($checkout_query);
 
         <div class="toreceive">
             <div>
-                <h4>To Receive</h4>
+                <h4>Received Orders</h4>
                 <div class="row">
                     <?php while ($checkout_row = $checkout_result->fetch_assoc()) : ?>
                         <?php
